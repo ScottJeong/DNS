@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;W5500-EVB_DNS/src/w5500_init&apos; to &apos;w5500_init.c&apos;" description="Rename resource &apos;w5500_init&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/w5500_init" name="w5500_init.c" stamp="1442203710866" updateReferences="true"/>
+</session>

@@ -1,0 +1,21 @@
+16:15:09 **** Incremental Build of configuration Debug for project W5500-EVB_DNS ****
+make -r all 
+Building file: ../src/W5500-EVB_DNS.c
+Invoking: MCU C Compiler
+arm-none-eabi-gcc -DDEBUG -D__CODE_RED -DCORE_M0 -D__USE_ROMDIVIDE -D__USE_LPCOPEN -D__LPC11EXX__ -D__REDLIB__ -I"D:\06.Study\DNS\workspace\W5500-EVB_DNS\src" -I"D:\06.Study\DNS\workspace\W5500-EVB_DNS\src\Ethernet" -I"D:\06.Study\DNS\workspace\W5500-EVB_DNS\src\Internet" -I"D:\06.Study\DNS\workspace\W5500-EVB_DNS\src\Internet\DHCP" -I"D:\06.Study\DNS\workspace\wiznet_evb_w5500evb_board\inc" -I"D:\06.Study\DNS\workspace\lpc_chip_11exx\inc" -O0 -g3 -Wall -c -fmessage-length=0 -fno-builtin -ffunction-sections -fdata-sections -mcpu=cortex-m0 -mthumb -specs=redlib.specs -MMD -MP -MF"src/W5500-EVB_DNS.d" -MT"src/W5500-EVB_DNS.o" -MT"src/W5500-EVB_DNS.d" -o "src/W5500-EVB_DNS.o" "../src/W5500-EVB_DNS.c"
+Finished building: ../src/W5500-EVB_DNS.c
+ 
+Building target: W5500-EVB_DNS.axf
+Invoking: MCU Linker
+arm-none-eabi-gcc -nostdlib -L"D:\06.Study\DNS\workspace\wiznet_evb_w5500evb_board\Debug" -L"D:\06.Study\DNS\workspace\lpc_chip_11exx\Debug" -Xlinker -Map="W5500-EVB_DNS.map" -Xlinker --gc-sections -mcpu=cortex-m0 -mthumb -T "W5500-EVB_DNS_Debug.ld" -o "W5500-EVB_DNS.axf"  ./src/Internet/DNS/dns.o  ./src/Internet/DHCP/dhcp.o  ./src/Ethernet/W5500/w5500.o  ./src/Ethernet/W5300/w5300.o  ./src/Ethernet/W5200/w5200.o  ./src/Ethernet/W5100/w5100.o  ./src/Ethernet/socket.o ./src/Ethernet/wizchip_conf.o  ./src/W5500-EVB_DNS.o ./src/aeabi_romdiv_patch.o ./src/cr_startup_lpc11exx.o ./src/crp.o ./src/spi_handler.o ./src/sysinit.o ./src/w5500_init.o   -lwiznet_evb_w5500evb_board -llpc_chip_11exx
+Finished building target: W5500-EVB_DNS.axf
+ 
+make --no-print-directory post-build
+Performing post-build steps
+arm-none-eabi-size "W5500-EVB_DNS.axf" ; arm-none-eabi-objcopy -O ihex "W5500-EVB_DNS.axf" "W5500-EVB_DNS.hex" ; # arm-none-eabi-objcopy -v -O binary "W5500-EVB_DNS.axf" "W5500-EVB_DNS.bin" ; # checksum -p LPC11E36_501 -d "W5500-EVB_DNS.bin"
+   text	   data	    bss	    dec	    hex	filename
+  32264	     84	   2464	  34812	   87fc	W5500-EVB_DNS.axf
+ 
+
+16:15:23 Build Finished (took 13s.846ms)
+

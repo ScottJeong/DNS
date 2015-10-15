@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 6 resources" deleteContents="false" description="Delete 6 resources" element1="/W5500-EVB_DNS/src/Internet/FTPClient" element2="/W5500-EVB_DNS/src/Internet/FTPServer" element3="/W5500-EVB_DNS/src/Internet/httpServer" element4="/W5500-EVB_DNS/src/Internet/SNMP" element5="/W5500-EVB_DNS/src/Internet/SNTP" element6="/W5500-EVB_DNS/src/Internet/TFTP" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="6" stamp="1442203255271"/>
+</session>
